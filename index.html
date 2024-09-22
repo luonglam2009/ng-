@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời chúc ngủ ngon </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gửi đến người đặc biệt nhất</h1>
+        <h1 class="message">Ngủ Ngon</h1>
+        <button onclick="showMessage()">Bấm vào đây</button>
+        <h1 id="reveal-message" style="display:none;">Chúc bạn có thể mơ thấy những giấc mơ đẹp</h1>
+    </div>
+
+    <audio id="love-song" src="song.mp3" style="display:none;"></audio>
+
+    <script>
+        function showMessage() {
+            document.getElementById("reveal-message").style.display = "block";
+            document.getElementById("love-song").play();
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Căn giữa chữ</title>
+    <style>
+        h1 {
+            text-align: center; /* Căn giữa văn bản theo chiều ngang */
+            color: #faf2f3;
+        }
+    </style>
+</head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màu nền</title>
+    <style>
+        body {
+            background-color: #f096a2; /* Đặt màu nền cho trang */
+        }
+
+        .box {
+            background-color: #ec2939; /* Đặt màu nền cho một phần tử cụ thể */
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trái tim động</title>
+    <style>
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transform: rotate(-45deg);
+            margin: 50px auto;
+            animation: beat 1s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+</body>
+</html>
+
